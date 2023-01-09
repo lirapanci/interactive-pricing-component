@@ -778,6 +778,11 @@ video {
   color: rgb(190 205 255 / var(--tw-text-opacity));
 }
 
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(41 51 86 / var(--tw-text-opacity));
+}
+
 .bg-top{
   background-image: url("/images/bg-pattern.svg");
   height: 50vh;
