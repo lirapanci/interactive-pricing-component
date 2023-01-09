@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body class="bg-main">
+  <main class="font-manrope bg-top bg-no-repeat">
+    <div class="text-center py-16 relative max-w-[540px] mx-auto">
+      <h1 class="text-3xl font-extrabold py-3">Simple, traffic-based pricing </h1>
+      <p>Sign-up for our 30-day trial. No credit card required. </p>
+      <div class="absolute right-[12rem] top-[2rem]">
+        <svg width="146" height="145" viewBox="0 0 146 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="63" cy="82" r="62.5" stroke="#CFD8EF"/>
+          <circle cx="105" cy="41" r="40.5" stroke="#CFD8EF"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="bg-white my-[54px] md:mx-auto mx-6 max-w-[540px] rounded-lg box py-8">
+      <div class="">
+        <div class="flex-none md:flex  justify-between items-center px-[48px]">
+          <div class="text-sm uppercase text-gray tracking-widest text-center md:text-left">
+            <h2>
+            <span class="pageviews">
+              <output id="pageviews">50K</output>
+            </span>
+              Pageviews
+            </h2>
+          </div>
+          <div class="justify-self-end py-6 md:py-0">
+            <div class="text-[40px] flex items-center price justify-center">
+              <span>$ </span>
+              <h2 class="text-[40px]">
+                <output id="price">12.00</output>
+                &nbsp</h2>
+              <span class="text-sm text-gray font-semibold">&nbsp / month</span>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <!--      SLIDER-->
+      <div class="md:pt-10 px-12">
+        <input id="input" type="range" value="1" min="0" max="4" step="1" />
+      </div>
+      <div class="flex items-center justify-center  my-10"> <!-- Toggle switch -->
+        <div>
+          <span class="text-gray text-xs">Monthly Billing</span>
+        </div>
+        <div class="mx-4">
+          <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="flex text-sm items-center">
+          <span class="text-gray text-xs">Yearly Billing</span>
+          <div class="bg-light-orange text-orange py-0.5 px-2 rounded-xl mx-2.5 hidden md:block">
+            25% discount
+          </div>
+          <div class="bg-light-orange text-orange py-0.5 px-2 rounded-xl mx-2.5 md:hidden block">
+            - 25%
+          </div>
+        </div>
+      </div>
+      <div class="border-t-2 border-light-gray">
+        <div class="md:grid grid-cols-2 px-[48px]">
+          <div>
+            <ul class="text-xs text-gray pt-6 md:pt-0">
+              <li class="flex items-center justify-center md:justify-start py-2.5">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 4.13439L1.90736 6.04175L6.9491 1" stroke="#10D8C4" stroke-width="2"/>
+                </svg>
+                <span class="px-4">Unlimited websites</span>
+              </li>
+
+              <li class="flex items-center justify-center md:justify-start py-2.5">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 4.13439L1.90736 6.04175L6.9491 1" stroke="#10D8C4" stroke-width="2"/>
+                </svg>
+                <span class="px-4">100% data ownership</span>
+              </li>
+
+              <li class="flex items-center justify-center md:justify-start py-2.5">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 4.13439L1.90736 6.04175L6.9491 1" stroke="#10D8C4" stroke-width="2"/>
+                </svg>
+                <span class="px-4">Email reports</span>
+              </li>
+
+            </ul>
+          </div>
+          <div class="flex items-center justify-center py-8 md:py-0">
+            <button class="bg-blue text-lilly hover:text-white text-xs py-3 px-12 rounded-3xl">Start my trial</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
