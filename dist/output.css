@@ -536,14 +536,6 @@ video {
   top: 2rem;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
-.z-\[-10\] {
-  z-index: -10;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -818,6 +810,10 @@ video {
 
 .box {
   box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+}
+
+.circles{
+  z-index: -1;
 }
 
 /* The switch - the box around the slider */
