@@ -816,6 +816,10 @@ video {
   z-index: -1;
 }
 
+.title{
+  z-index: 99;
+}
+
 /* The switch - the box around the slider */
 
 .switch {
